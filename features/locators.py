@@ -5,4 +5,4 @@ class SearchPageLocators:
     SEARCH_INPUT = "#searchField"  # CSS ID selector
     SEARCH_BUTTON = ".text-white.fal.fa-search"  # CSS class selectors (dot notation for multiple classes)
     SEARCH_SUBMIT = "#submitSearch"  # CSS ID selector
-
+# search_button = page.get_by_role("button", name="Search")

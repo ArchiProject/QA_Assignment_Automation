@@ -5,7 +5,7 @@ def before_all(context):
     # Start Playwright and launch browser
     playwright = sync_playwright().start()
     context.playwright = playwright  # Store playwright instance in context (for use in after_all)
-    context.browser = playwright.chromium.launch(headless=True)  # Launch Chromium browser
+    context.browser = playwright.chromium.launch(headless=False)  # Launch Chromium browser
     context.page = context.browser.new_page()  # Create a new browser page
 
 def after_all(context):
